@@ -1,0 +1,26 @@
+{
+    "name": "simple-qr-code",
+    "version": "1.0.0",
+    "author": "Christopher Keers <source[at]caboodle.tech>",
+    "bugs": {
+        "url": "https://github.com/caboodle-tech/simple-qr-code/issues"
+    },
+    "contributors": [
+        "Caboodle Tech Inc (https://github.com/caboodle-tech)"
+    ],
+    "description": "A simple QR Code generator with no dependencies, complete QR code generation algorithm included.",
+    "devDependencies": {
+        "@html-eslint/eslint-plugin": "^0.32.0",
+        "@html-eslint/parser": "^0.32.0",
+        "eslint": "^9.39.2",
+        "eslint-plugin-jsonc": "^2.21.0",
+        "jsonc-eslint-parser": "^2.4.2",
+        "rolldown": "1.0.0-rc.1"
+    },
+    "homepage": "https://github.com/caboodle-tech/simple-qr-code#readme",
+    "license": "Common Clause with MIT",
+    "scripts": {
+        "build": "rolldown -c rolldown.config.js"
+    },
+    "type": "module"
+}

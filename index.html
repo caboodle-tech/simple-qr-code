@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Simple QR Code Generator - Demo</title>
+        <link href="assets/main.css" rel="stylesheet">
+        <script type="module" src="assets/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Simple QR Code Generator</h1>
+                <p class="subtitle">A modern, self-contained QR code generator, with no dependencies.</p>
+            </header>
+            <main>
+                <div class="demo-grid">
+                    <div class="preview-panel">
+                        <h2>Preview</h2>
+                        <div id="qr-preview" class="qr-preview">
+                            <!-- QR code will be inserted here -->
+                        </div>
+                        <div class="preview-info">
+                            <p>QR code updates in real-time as you customize the options.</p>
+                        </div>
+                    </div>
+                    <div class="controls-panel">
+                        <h2>Customize Your QR Code</h2>
+                        <form id="qr-form">
+                            <div class="form-group">
+                                <label for="url-input">Data to Encode</label>
+                                <input id="url-input" type="text" name="url" placeholder="Enter URL or text"
+                                    value="https://github.com/caboodle-tech/simple-qr-code">
+                            </div>
+                            <div class="form-row compact">
+                                <div class="form-group">
+                                    <label for="size-input">Size</label>
+                                    <input id="size-input" type="number" max="1000" min="100" name="size" step="10" value="300">
+                                </div>
+                                <div class="form-group">
+                                    <label for="margin-input">Margin</label>
+                                    <input id="margin-input" type="number" max="20" min="0" name="margin" step="1" value="4">
+                                </div>
+                            </div>
+                            <div class="color-picker-grid">
+                                <div class="form-group">
+                                    <label for="module-color">Module</label>
+                                    <input id="module-color" type="color" name="moduleColor" value="#1c7d43">
+                                </div>
+                                <div class="form-group">
+                                    <label for="position-ring-color">Ring</label>
+                                    <input id="position-ring-color" type="color" name="positionRingColor" value="#13532d">
+                                </div>
+                                <div class="form-group">
+                                    <label for="position-center-color">Center</label>
+                                    <input id="position-center-color" type="color" name="positionCenterColor" value="#70c559">
+                                </div>
+                                <div class="form-group">
+                                    <label for="background-color">Background</label>
+                                    <input id="background-color" type="color" name="backgroundColor" value="#ffffff">
+                                </div>
+                            </div>
+                            <div class="radius-row">
+                                <div class="form-group">
+                                    <label for="position-marker-radius">
+                                        Position Radius
+                                        <span id="position-radius-value" class="value-display">10%</span>
+                                    </label>
+                                    <input id="position-marker-radius" type="range" max="100" min="0" name="positionMarkerRadius"
+                                        step="5" value="10">
+                                </div>
+                                <div class="form-group">
+                                    <label for="data-marker-radius">
+                                        Data Radius
+                                        <span id="data-radius-value" class="value-display">10%</span>
+                                    </label>
+                                    <input id="data-marker-radius" type="range" max="100" min="0" name="dataMarkerRadius"
+                                        step="5" value="10">
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button id="download-svg-btn" type="button" class="btn btn-primary">Download SVG</button>
+                                <button id="download-png-btn" type="button" class="btn btn-primary">Download PNG</button>
+                            </div>
+                            <div class="form-actions">
+                                <button id="reset-btn" type="button" class="btn btn-secondary">Reset</button>
+                                <button id="blackout-btn" type="button" class="btn btn-secondary">Blackout</button>
+                                <button id="whiteout-btn" type="button" class="btn btn-secondary">Whiteout</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>
+                    <a href="https://github.com/caboodle-tech/simple-qr-code" rel="noopener noreferrer" target="_blank">
+                        View on GitHub
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
