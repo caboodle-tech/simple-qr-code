@@ -1,4 +1,4 @@
-import { QRCode } from '../qr-code.js';
+import { QRCode } from '../dist/qr-code.esm.js';
 
 // Fallback to window.QRCode if import fails (for non-module contexts)
 const QRCodeInstance = QRCode || window.QRCode;

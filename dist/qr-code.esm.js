@@ -1,8 +1,7 @@
-/**
+/*! @license
  * Simple QR Code v1.0.0 Copyright (c) 2026 Caboodle Tech Inc.
  * License and source code available at: https://github.com/caboodle-tech/simple-qr-code
  */
-
 var QRCodeGenerator = class {
 	#MODE = {
 		MODE_NUMBER: 1,
